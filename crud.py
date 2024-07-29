@@ -1,9 +1,17 @@
+from dotenv import load_dotenv
+import os
 import mysql.connector
 
+load_dotenv()
+mysql_host = os.getenv('MYSQL_HOST')
+mysql_user = os.getenv('MYSQL_USER')
+mysql_password = os.getenv('MYSQL_PASSWORD')
+
+
 mydb = mysql.connector.connect(
-  host="localhost",
-  user="root",
-  password="Antima@310"
+  host = mysql_host,
+  user = mysql_user,
+  password = mysql_password
 )
 
 curr = mydb.cursor()
