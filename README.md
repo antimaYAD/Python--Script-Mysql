@@ -1,2 +1,2 @@
 # Python--Script-Mysql
-This repositary contain RDMS MYSQL Query
+This repositary contain RDMS MYSQL Quer
